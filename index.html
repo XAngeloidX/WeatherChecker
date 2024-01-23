@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Checker</title>
   </head>
-  <!--class="blurryStart"-->
-  <body>
+  <body class="blurryStart">
     <header class="header">
       <link
       href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
@@ -16,7 +15,7 @@
 
       <div class="left-side">
         <img class="weatherImage large" src="Icons/sun.svg" data-current-icon/>
-        <div class="header-current-temperature">
+        <div class="header-current-temp">
           <span data-current-temp class="variable">31</span><span class="variableInfo">&deg;</span>
         </div>
       </div>
@@ -27,7 +26,7 @@
         </div>
         <div class="temp-info">
           <div class="label">CA High</div>
-          <div><span data-current-ca-high="" class="variable">41</span><span class="variableInfo">&deg;</span></div>
+          <div><span data-current-fl-high="" class="variable">41</span><span class="variableInfo">&deg;</span></div>
         </div>
         <div class="temp-info">
           <div class="label">Wind</div>
@@ -39,7 +38,7 @@
         </div>
         <div class="temp-info">
           <div class="label">CA Low</div>
-          <div><span data-current-ca-low="" class="variable">21</span><span class="variableInfo">&deg;</span></div>
+          <div><span data-current-fl-low="" class="variable">21</span><span class="variableInfo">&deg;</span></div>
         </div>
         <div class="temp-info">
           <div class="label">Precip %</div>
@@ -123,10 +122,6 @@
             </div>
           </td>
         </tr>
-      </tbody>
-    </table>
-    <table class="hourSection">
-      <tbody data-hour-section>
         <tr class="hourRow">
           <td>
             <div class="infoGroup">
@@ -162,10 +157,6 @@
             </div>
           </td>
         </tr>
-      </tbody>
-    </table>
-    <table class="hourSection">
-      <tbody data-hour-section>
         <tr class="hourRow">
           <td>
             <div class="infoGroup">
@@ -201,10 +192,6 @@
             </div>
           </td>
         </tr>
-      </tbody>
-    </table>
-    <table class="hourSection">
-      <tbody data-hour-section>
         <tr class="hourRow">
           <td>
             <div class="infoGroup">
@@ -240,10 +227,6 @@
             </div>
           </td>
         </tr>
-      </tbody>
-    </table>
-    <table class="hourSection">
-      <tbody data-hour-section>
         <tr class="hourRow">
           <td>
             <div class="infoGroup">
@@ -279,10 +262,6 @@
             </div>
           </td>
         </tr>
-      </tbody>
-    </table>
-    <table class="hourSection">
-      <tbody data-hour-section>
         <tr class="hourRow">
           <td>
             <div class="infoGroup">
@@ -317,11 +296,7 @@
               <div>0<span class="variableInfo">in</span></div>
             </div>
           </td>
-        </tr>
-      </tbody>
-    </table>
-    <table class="hourSection">
-      <tbody data-hour-section>
+        </tr>   
         <tr class="hourRow">
           <td>
             <div class="infoGroup">
@@ -357,10 +332,6 @@
             </div>
           </td>
         </tr>
-      </tbody>
-    </table>
-    <table class="hourSection">
-      <tbody data-hour-section>
         <tr class="hourRow">
           <td>
             <div class="infoGroup">
@@ -396,10 +367,6 @@
             </div>
           </td>
         </tr>
-      </tbody>
-    </table>
-    <table class="hourSection">
-      <tbody data-hour-section>
         <tr class="hourRow">
           <td>
             <div class="infoGroup">
@@ -435,10 +402,7 @@
             </div>
           </td>
         </tr>
-      </tbody>
-    </table>
-    <table class="hourSection">
-      <tbody data-hour-section>
+
         <tr class="hourRow">
           <td>
             <div class="infoGroup">
@@ -477,7 +441,7 @@
       </tbody>
     </table>
 
-    <template id="dayCardTemplate">
+    <template id="day-card-template">
       <div class="dayCard">
         <img data-icon class="weatherImage"/>
         <div class="dayCardDay" data-date>
@@ -486,7 +450,7 @@
       </div>
     </template>
 
-    <template id="hourRowTemplate">
+    <template id="hour-row-template">
       <tr class="hourRow">
         <td>
           <div class="infoGroup">

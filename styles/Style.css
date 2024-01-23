@@ -73,6 +73,12 @@ body {
     font-size: 2rem;
 }
 
+.header-current-temp .variable {
+    font-size: 5rem;
+    margin-left: 1rem;
+}
+
+
 .variableInfo {
     font-weight: lighter;
     font-size: 2rem;
