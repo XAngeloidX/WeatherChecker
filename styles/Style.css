@@ -43,7 +43,7 @@ body {
 }
 
 .header-current-temp {
-    font-size: 4rem;
+    font-size: 1rem;
     margin-left: 1rem;
 }
 
@@ -62,26 +62,26 @@ body {
 }
 
 .label {
-    text-transform: capitalize;
-    font-weight: 1000;
-    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.75rem;
     color: aliceblue;
 }
 
 .variable {
-    font-weight: 700;
-    font-size: 2rem;
+    font-weight: lighter;
+    font-size: 0.8rem;
 }
 
 .header-current-temp .variable {
-    font-size: 5rem;
+    font-size: 3rem;
     margin-left: 1rem;
 }
 
 
 .variableInfo {
     font-weight: lighter;
-    font-size: 2rem;
+    font-size: 0.8rem;
 }
 
 .daySection {
@@ -112,7 +112,7 @@ body {
     width: 100%;
     text-align: center;
     border-spacing: 0;
-    font-size: 2rem
+    font-size: 1rem
 }
 
 .hourSection:nth-of-type(even) .hourRow {
@@ -126,3 +126,17 @@ body {
 .hourRow > td {
     padding: 0.25rem 0.5rem;
 }
+
+
+@media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #f9f9f9;
+    }
+  }
