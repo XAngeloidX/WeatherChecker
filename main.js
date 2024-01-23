@@ -27,7 +27,7 @@ function renderWeather({ current, daily, hourly }) {
   renderCurrentWeather(current)
   renderDailyWeather(daily)
   renderHourlyWeather(hourly)
-  document.body.classList.remove("blurred")
+  document.body.classList.remove("blurryStart")
 }
 
 function setValue(selector, value, { parent = document } = {}) {
